@@ -7,7 +7,7 @@ import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // ReactDOM.render(<App />, document.getElementById('root'));
-// registerServiceWorker();
+
 
 const Root = () => {
 	return (
@@ -16,3 +16,6 @@ const Root = () => {
 }
 
 render(<Root />, document.querySelector('#root'));
+
+
+registerServiceWorker();

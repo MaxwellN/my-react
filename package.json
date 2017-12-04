@@ -26,8 +26,25 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "watch": "concurrently --names \"webpack, stylus\" --prefix name \"npm run start\" \"npm run styles:watch\"",
-		"styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
+    "styles": "stylus -u autoprefixer-stylus ./src/css/style.styl -o ./src/css/style.css",
     "styles:watch": "stylus -u autoprefixer-stylus -w ./src/css/style.styl -o ./src/css/style.css",
     "eject": "react-scripts eject"
-  }
+  },
+  "description": "My React app. Hope it's smooth sailing.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxwellN/my-react.git"
+  },
+  "keywords": [
+    "a",
+    "react",
+    "app"
+  ],
+  "author": "maxwell narten",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaxwellN/my-react/issues"
+  },
+  "homepage": "https://github.com/MaxwellN/my-react#readme"
 }
