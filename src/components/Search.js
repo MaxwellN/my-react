@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { config } from '../keys.js'
 
 class Search extends Component {
 
@@ -7,9 +8,16 @@ class Search extends Component {
 		this.searchImages = this.searchImages.bind(this);
 	}
 
+	// componentDidMount() {
+  //
+	// }
 	searchImages(event) {
 		event.preventDefault();
-		console.log(this.searchInput.value);
+		fetch('https://api.flickr.com/services/rest/?method=flickr.photos.search&format=json&nojsoncallback=1&per_page=80&api_key=' +  config.apiKey + '&tags=' + this.searchInput.value)
+		.then((response) => response.json())
+		.catch((error) => {
+			console.log(`Fetch failed ${error}`);
+		})
 	}
 
 	render() {

@@ -15,20 +15,20 @@ class App extends Component {
 	searchImages() {
 		console.log("clicked it!!!");
 	}
-  render() {
-    return (
-      <div className="container">
-        <header>
-          <h1 className="intro">This app is built with React. It allows you to search multiple image databases and save your favorites.</h1>
+	render() {
+		return (
+			<div className="container">
+				<header>
+					<h1 className="intro">This app is built with React. It allows you to search multiple image databases and save your favorites.</h1>
 					<Search />
 					<Favorite />
-        </header>
+				</header>
 				<div className="main">
 					<ImageGallery />
 				</div>
-      </div>
-    );
-  }
+			</div>
+		);
+	}
 }
 
 export default App;
